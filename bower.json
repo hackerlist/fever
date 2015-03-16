@@ -1,0 +1,28 @@
+{
+  "name": "fever",
+  "version": "0.0.1",
+  "homepage": "https://github.com/valish/fever",
+  "authors": [
+    "valish <andrew@vali.sh>"
+  ],
+  "description": "Fever is a user interface framework designed for the rapid development of web applications",
+  "main": "dist/css/fever.css",
+  "keywords": [
+    "ui",
+    "web apps",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "karma.conf.js",
+    "package.json"
+  ]
+}
