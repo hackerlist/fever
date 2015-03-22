@@ -1,0 +1,28 @@
+{
+  "name": "feverjs",
+  "version": "0.0.1",
+  "description": "UI Boilerplate for Web Apps",
+  "main": "dist/js/fever.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valish/fever.git"
+  },
+  "keywords": [
+    "ui",
+    "framework",
+    "boilerplate"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valish/fever/issues"
+  },
+  "homepage": "https://github.com/valish/fever",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3"
+  }
+}
