@@ -132,6 +132,16 @@ input[type="button"].button-primary:focus {
     border-color: #1EAEDB;
     color: #FFF; }
 
+input[type=button],
+input[type=submit] {
+    &.silver {
+        background-color: #e5e5e5;
+        background-image: linear-gradient(#f2f2f2, #d8d8d8);
+        color: #6f6f6f;
+        text-shadow: 1px 0 #fff;
+    }
+}
+
 /**------------------------------------------------------+
 //  Spacing
 //------------------------------------------------------*/
