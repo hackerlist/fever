@@ -1,16 +1,29 @@
+/*
+
+  !!!!!!!!!!!!!!!!
+  !! Base FEVER !!
+  !!!!!!!!!!!!!!!!
+
+*/
 
 /**------------------------------------------------------+
 //  Spacing
 //------------------------------------------------------*/
 
+html { box-sizing: border-box; }
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
 button,
-.button {
-    margin-bottom: 1rem; }
+.button { margin-bottom: 1rem; }
+
 input,
 textarea,
 select,
-fieldset {
-    margin-bottom: 1.5rem; }
+fieldset { margin-bottom: 1.5rem; }
+
 pre,
 blockquote,
 dl,
@@ -19,24 +32,21 @@ table,
 p,
 ul,
 ol,
-form {
-    margin-bottom: 2.5rem; }
+form { margin-bottom: 2.5rem; }
 
 
 /**------------------------------------------------------+
 //  Utilities
 //------------------------------------------------------*/
 
-.u-full-width {
-    width: 100%;
-    box-sizing: border-box; }
-.u-max-full-width {
-    max-width: 100%;
-    box-sizing: border-box; }
-.u-pull-right {
-    float: right; }
-.u-pull-left {
-    float: left; }
+.u-full-width { width: 100%; }
+.u-max-full-width { max-width: 100%;}
+.u-pull-right { float: right; }
+.u-pull-left { float: left; }
+.u-clear {
+    clear: both;
+    content: "";
+    display: table; }
 
 
 /**------------------------------------------------------+
@@ -44,15 +54,21 @@ form {
 //------------------------------------------------------*/
 
 hr {
-    margin-top: 3rem;
-    margin-bottom: 3.5rem;
     border-width: 0;
-    border-top: 1px solid #E1E1E1; }
+    border-top: 1px solid #E1E1E1;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem; }
 
-// Clearing
-.container:after,
-.row:after,
-.u-cf {
-    content: "";
-    display: table;
-    clear: both; }
+code {
+    background: #F1F1F1;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    font-size: 90%;
+    margin: 0 .2rem;
+    padding: .2rem .5rem;
+    white-space: nowrap; }
+
+pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre; }
