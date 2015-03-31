@@ -1,32 +1,55 @@
+/*
+  
+  !!!!!!!!!!!!!!!!
+  !! Grid FEVER !!
+  !!!!!!!!!!!!!!!!
+
+*/
 
 /**------------------------------------------------------+
-//  Grid
+//  Container
 //------------------------------------------------------*/
 
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
+.contain {
+    box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box; }
+    max-width: 980px;
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+
+/**------------------------------------------------------+
+//  Columns
+//------------------------------------------------------*/
 
 .column,
 .columns {
-    width: 100%;
     float: left;
-    box-sizing: border-box; }
+    width: 100%; }
+
+
+/**------------------------------------------------------+
+//  Media Queries
+//------------------------------------------------------*/
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
-    .container {
+    .contain {
         width: 85%;
         padding: 0; }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-    .container {
+    .contain {
         width: 80%; }
     .column,
     .columns {
@@ -77,12 +100,10 @@
     .offset-by-ten.columns          { margin-left: 86.6666666667%; }
     .offset-by-eleven.column,
     .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
     .offset-by-one-third.column,
     .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
     .offset-by-two-thirds.column,
     .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
     .offset-by-one-half.column,
     .offset-by-one-half.columns     { margin-left: 52%; }
 
