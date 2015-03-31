@@ -1,12 +1,12 @@
 {
   "name": "fever",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "homepage": "https://github.com/hackerlist/fever",
   "authors": [
-    "valish <andrew@vali.sh>"
+    "valish <v@hackerlist.net>"
   ],
-  "description": "Fever is a user interface framework designed for the rapid development of web applications",
-  "main": "dist/css/fever.css",
+  "description": "Fever is a UI framework for web applications",
+  "main": "css/fever.css",
   "keywords": [
     "ui",
     "web apps",
