@@ -1,0 +1,47 @@
+/*
+
+  !!!!!!!!!!!!!!!!!!
+  !! Header FEVER !!
+  !!!!!!!!!!!!!!!!!!
+
+*/
+
+/**------------------------------------------------------+
+//  App Header
+/**-----------------------------------------------------*/
+
+.app-header {
+    $header-height: 55px;
+    background: $soft-orange;
+    color: #fff;
+    height: $header-height;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .app-header-logo {
+        $logo-width: 144px;
+        line-height: $header-height;
+        width: $logo-width;
+        a {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        &.centered {
+            left: 50%;
+            margin-left: -$logo-width/2;
+            position: absolute;
+            text-align: center;
+        }
+    }
+    .app-header-nav {
+        ul li {
+            display: inline-block;
+            line-height: $header-height;
+            list-style-type: none;
+            a { display: block; }
+        }
+    }
+}
+
+
