@@ -10,7 +10,10 @@
 //  Spacing
 //------------------------------------------------------*/
 
-html { box-sizing: border-box; }
+html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
 
 *,
 *:before,
