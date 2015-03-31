@@ -1,8 +1,11 @@
 
-/*
+/*!
 
   FEVER
-  License: MIT
+  
+  :copyright: (c) 2015 by Andrew Valish
+  :license: See LICENSE for more details.
+  :source: https://github.com/hackerlist/fever
 
 */
 
@@ -12,20 +15,16 @@
 // Vendor
 @import "vendor/normalize";
 
-// Helpers
-@import "helpers";
-
 // Global Variables
-@import "globals";
+@import "global";
 
 // Elements
 @import
   "elements/base",
-  "elements/code",
-  "elements/forms",
+  "elements/form",
   "elements/grid",
   "elements/list",
-  "elements/tables",
-  "elements/typography";
+  "elements/table",
+  "elements/type";
 
       
