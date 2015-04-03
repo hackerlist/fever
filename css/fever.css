@@ -162,7 +162,8 @@ td, th {
 //  Spacing
 //------------------------------------------------------*/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-y: scroll; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -305,6 +306,12 @@ label > .label-body {
   background-color: #1EAEDB;
   border-color: #1EAEDB;
   color: #FFF; }
+
+input[type=button].silver, input[type=submit].silver {
+  background-color: #e5e5e5;
+  background-image: linear-gradient(#f2f2f2, #d8d8d8);
+  color: #6f6f6f;
+  text-shadow: 1px 0 #fff; }
 
 /**------------------------------------------------------+
 //  Spacing
@@ -531,3 +538,38 @@ h6 {
 //------------------------------------------------------*/
 p {
   margin-top: 0; }
+
+/*
+
+  !!!!!!!!!!!!!!!!!!
+  !! Header FEVER !!
+  !!!!!!!!!!!!!!!!!!
+
+*/
+/**------------------------------------------------------+
+//  App Header
+/**-----------------------------------------------------*/
+.app-header {
+  background: #e77f50;
+  color: #fff;
+  height: 55px; }
+  .app-header a {
+    color: inherit;
+    text-decoration: none; }
+  .app-header .app-header-logo {
+    line-height: 55px;
+    width: 144px; }
+    .app-header .app-header-logo a {
+      font-size: 1.3rem;
+      font-weight: 700; }
+    .app-header .app-header-logo.centered {
+      left: 50%;
+      margin-left: -72px;
+      position: absolute;
+      text-align: center; }
+  .app-header .app-header-nav ul li {
+    display: inline-block;
+    line-height: 55px;
+    list-style-type: none; }
+    .app-header .app-header-nav ul li a {
+      display: block; }
