@@ -44,28 +44,35 @@ textarea {
     min-height: 71px;
     padding: 6px 0; }
 
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-    border: 1px solid #33C3F0;
-    outline: 0; }
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    &:focus {
+        border: 1px solid #33C3F0;
+        outline: 0;
+    }
+}
+
 label,
 legend {
     display: block;
     font-weight: 600;
     margin-bottom: .5rem; }
+
 fieldset {
     border-width: 0;
     padding: 0; }
+
 input[type="checkbox"],
 input[type="radio"] {
     display: inline; }
+
 label > .label-body {
     display: inline-block;
     font-weight: normal;
@@ -94,21 +101,14 @@ input[type="button"] {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    white-space: nowrap; }
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-    border-color: #888;
-    color: #333;
-    outline: 0; }
+    white-space: nowrap;
+    &:hover,
+    &:focus {
+        border-color: #888;
+        color: #333;
+        outline: 0;
+    }        
+}
 
 .button.button-primary,
 button.button-primary,
@@ -117,20 +117,14 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
     background-color: #33C3F0;
     border-color: #33C3F0;
-    color: #FFF; }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-    background-color: #1EAEDB;
-    border-color: #1EAEDB;
-    color: #FFF; }
+    color: #FFF;
+    &:hover,
+    &:focus {
+        background-color: #1EAEDB;
+        border-color: #1EAEDB;
+        color: #FFF;        
+    }
+}
 
 input[type=button],
 input[type=submit] {
